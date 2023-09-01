@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="body container flex-grow-1 px-5 pt-2">
+    <div class="container flex-grow-1 px-5 pt-2">
+
+        <div class="d-flex py-2 justify-content-between mb-3 flex-wrap align-items-center">
+            <h4 class="text-gray fw-bold p-0 m-0"> Consulta individual</h4>
+
+            <ul class="d-flex flex-row p-0 m-0 custom-breadcrumb">
+                <li class="fw-bolder text-dark "><a href="/">Inicio</a></li>
+                <li class="mx-2">|</li>
+                <li class="fw-lighter">
+                    Consulta individual                
+                </li>
+            </ul>
+        </div>
+
+        <div class="card col-md-12">
+
+            <div class="card-body" >
+                <table id="employee_table" class="table nowrap responsive table-striped dt-responsive" width="100%">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">C.C</th>
+                            <th>Nombre</th>
+                            <th>Fecha Retiro</th>
+                            <th>Observacion</th>
+                            <th>Avance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th data-priority="1">C.C</th>
+                            <th>Nombre</th>
+                            <th>Fecha Retiro</th>
+                            <th>Observacion</th>
+                            <th>Avance</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block imports %}
+
+<script type="text/javascript" src="{% static 'js/consult_lists.js' %}"></script>
+
+{% endblock %}
